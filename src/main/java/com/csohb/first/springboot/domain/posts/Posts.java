@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor // 기본 생성자 자동 추가
 @Entity // JPA의 어노테이션
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id // 해당 테이블의 PK 필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK생성 규칙을 나타냄
     private Long id;

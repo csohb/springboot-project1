@@ -18,6 +18,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
+import java.time.LocalDateTime;
 import java.util.*;
 
 @RunWith(SpringRunner.class)
@@ -94,4 +96,6 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
 
     }
+
+
 }
